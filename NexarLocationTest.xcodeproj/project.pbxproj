@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4472686B27972FCB005473D7 /* DirectoryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472686A27972FCB005473D7 /* DirectoryMonitor.swift */; };
+		4472687027973E8B005473D7 /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4472686F27973E8B005473D7 /* APIManager.swift */; };
 		44FD28322796CE33008E2F67 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD28312796CE33008E2F67 /* AppDelegate.swift */; };
 		44FD28342796CE33008E2F67 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD28332796CE33008E2F67 /* SceneDelegate.swift */; };
 		44FD28362796CE33008E2F67 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD28352796CE33008E2F67 /* ViewController.swift */; };
@@ -16,6 +18,10 @@
 		44FD28492796CE38008E2F67 /* NexarLocationTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD28482796CE38008E2F67 /* NexarLocationTestTests.swift */; };
 		44FD28532796CE38008E2F67 /* NexarLocationTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD28522796CE38008E2F67 /* NexarLocationTestUITests.swift */; };
 		44FD28552796CE38008E2F67 /* NexarLocationTestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD28542796CE38008E2F67 /* NexarLocationTestUITestsLaunchTests.swift */; };
+		44FD28662796D58D008E2F67 /* LocationPublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD28652796D58D008E2F67 /* LocationPublisher.swift */; };
+		44FD28682796D964008E2F67 /* NamePublisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD28672796D964008E2F67 /* NamePublisher.swift */; };
+		44FD286A2796D9A4008E2F67 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD28692796D9A4008E2F67 /* Constants.swift */; };
+		44FD286C2796E1D4008E2F67 /* INFileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FD286B2796E1D4008E2F67 /* INFileManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4472686A27972FCB005473D7 /* DirectoryMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DirectoryMonitor.swift; sourceTree = "<group>"; };
+		4472686F27973E8B005473D7 /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
 		44FD282E2796CE33008E2F67 /* NexarLocationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NexarLocationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FD28312796CE33008E2F67 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44FD28332796CE33008E2F67 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +57,10 @@
 		44FD284E2796CE38008E2F67 /* NexarLocationTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NexarLocationTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FD28522796CE38008E2F67 /* NexarLocationTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexarLocationTestUITests.swift; sourceTree = "<group>"; };
 		44FD28542796CE38008E2F67 /* NexarLocationTestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NexarLocationTestUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		44FD28652796D58D008E2F67 /* LocationPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPublisher.swift; sourceTree = "<group>"; };
+		44FD28672796D964008E2F67 /* NamePublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamePublisher.swift; sourceTree = "<group>"; };
+		44FD28692796D9A4008E2F67 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		44FD286B2796E1D4008E2F67 /* INFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = INFileManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +88,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4472686C27973B1F005473D7 /* FileManagers */ = {
+			isa = PBXGroup;
+			children = (
+				44FD286B2796E1D4008E2F67 /* INFileManager.swift */,
+				4472686A27972FCB005473D7 /* DirectoryMonitor.swift */,
+			);
+			path = FileManagers;
+			sourceTree = "<group>";
+		};
+		4472686D27973B4F005473D7 /* Locations */ = {
+			isa = PBXGroup;
+			children = (
+				44FD28652796D58D008E2F67 /* LocationPublisher.swift */,
+			);
+			path = Locations;
+			sourceTree = "<group>";
+		};
+		4472686E27973B6A005473D7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				44FD28672796D964008E2F67 /* NamePublisher.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		44FD28252796CE33008E2F67 = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +140,11 @@
 				44FD28332796CE33008E2F67 /* SceneDelegate.swift */,
 				44FD28352796CE33008E2F67 /* ViewController.swift */,
 				44FD28372796CE33008E2F67 /* Main.storyboard */,
+				4472686F27973E8B005473D7 /* APIManager.swift */,
+				4472686D27973B4F005473D7 /* Locations */,
+				4472686E27973B6A005473D7 /* Helpers */,
+				4472686C27973B1F005473D7 /* FileManagers */,
+				44FD28692796D9A4008E2F67 /* Constants.swift */,
 				44FD283A2796CE37008E2F67 /* Assets.xcassets */,
 				44FD283C2796CE37008E2F67 /* LaunchScreen.storyboard */,
 				44FD283F2796CE37008E2F67 /* Info.plist */,
@@ -259,8 +301,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				44FD28362796CE33008E2F67 /* ViewController.swift in Sources */,
+				44FD28662796D58D008E2F67 /* LocationPublisher.swift in Sources */,
 				44FD28322796CE33008E2F67 /* AppDelegate.swift in Sources */,
+				4472687027973E8B005473D7 /* APIManager.swift in Sources */,
+				44FD286C2796E1D4008E2F67 /* INFileManager.swift in Sources */,
+				44FD28682796D964008E2F67 /* NamePublisher.swift in Sources */,
 				44FD28342796CE33008E2F67 /* SceneDelegate.swift in Sources */,
+				4472686B27972FCB005473D7 /* DirectoryMonitor.swift in Sources */,
+				44FD286A2796D9A4008E2F67 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +490,8 @@
 				DEVELOPMENT_TEAM = 6G6XD32457;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NexarLocationTest/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -470,6 +520,8 @@
 				DEVELOPMENT_TEAM = 6G6XD32457;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NexarLocationTest/Info.plist;
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
