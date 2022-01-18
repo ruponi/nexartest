@@ -8,9 +8,11 @@
 import Foundation
 import Combine
 
+// Still does not finished
+// TO DO: need to add several tasks for uploading files list
+//        
 class APIManager: NSObject {
     private var baseURL: URL
-    private
     
     init?(baseURL: URL?) {
        

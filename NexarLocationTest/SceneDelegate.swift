@@ -47,7 +47,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let listURL = fileList.map { block in
                 return block.0
             }
-            uploader?.uploadFileList(urls: listURL)
+            if let url = listURL.first {
+                uploader?.uploadFileList(url: url)
+            }
         }
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
